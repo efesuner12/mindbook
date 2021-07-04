@@ -1,0 +1,84 @@
+h2{
+	text-align: center;
+}
+
+form{
+	text-align: center;
+	border: 2px solid black;
+	margin: 20px 180px;
+	padding: 1em;
+	background-color: white;
+}
+
+body{
+	background-image: url(../Images/b8.jpg);
+}
+
+h2{
+	background-color: black; 
+	color: white; 
+	text-align: center; 
+	width: 35%; 
+	align:center;  
+	margin: 0 auto; 
+}
+
+.text_container{
+	background-color: white;
+	border: 2px solid black;
+	margin: 10px 250px;
+	text-align: center;
+}
+
+ol,ul{
+	display: inline-block;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+	width: 100%;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.bottom{
+	border: 2px solid black;
+	background-image: url(../Images/bb1.jpg);
+	color: white;
+	text-align: center;
+}
+
+ol,ul{
+	display: inline-block;
+}
+
+.logo1{
+	margin: 1px 595px;
+}
+
+.otherh2{
+	background-color: white; 
+	color: black;
+}

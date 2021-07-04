@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<style>
+
+{box-sizing: border-box}
+
+.slideshow-container{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.myslides{
+	display: none;
+}
+
+.prev,.next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next{
+	right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,.next:hover{
+	background-color: black;
+}
+
+.text{
+	color: black;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext{
+	color: black;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,.dot:hover{
+	background-color: #717171;
+}
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+<div class="myslides fade">
+	<div class="numbertext"> 1/9 </div>
+	<img src="Images/Mindbook.jpg" width="340px">
+	<div class="text"> Mindbook black composition </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 2/9 </div>
+	<img src="Images/Mindbook2.jpg" width="350px">
+	<div class="text"> Mindbook black spiral </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 3/9 </div>
+	<img src="Images/Mindbook3.jpg" width="340px">
+	<div class="text"> Mindbook red composition </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 4/9 </div>
+	<img src="Images/Mindbook7.jpg" width="350px" height="505">
+	<div class="text"> Mindbook red spiral </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 5/9 </div>
+	<img src="Images/Mindbook5.png" width="400px" height="470">
+	<div class="text"> Mindbook green composition </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 6/9 </div>
+	<img src="Images/Mindbook9.jpg" width="350px">
+	<div class="text"> Mindbook green spiral </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 7/9 </div>
+	<img src="Images/Mindbook6.jpg" width="360px" height="470">
+	<div class="text"> Mindbook pink composition </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 8/9 </div>
+	<img src="Images/Mindbook10.jpg" width="350px">
+	<div class="text"> Mindbook pink spiral </div>
+</div>
+
+<div class="myslides fade">
+	<div class="numbertext"> 9/9 </div>
+	<img src="Images/finger1.jpg" width="470px">
+	<div class="text"> Mindbook Fingerprint Scanner </div>
+</div>
+
+
+<a class="prev" onclick="plusSlidies(-1)"> &#10094 </a>
+<a class="next" onclick="plusSlides(1)"> &#10095 </a>
+</div>
+
+<br>
+
+<div style="text-align:center">
+	<span class="dot" onclick="currentslide(1)"> </span>
+	<span class="dot" onclick="currentslide(2)"> </span>
+	<span class="dot" onclick="currentslide(3)"> </span>
+	<span class="dot" onclick="currentslide(4)"> </span>
+	<span class="dot" onclick="currentslide(5)"> </span>
+	<span class="dot" onclick="currentslide(6)"> </span>
+	<span class="dot" onclick="currentslide(7)"> </span>
+	<span class="dot" onclick="currentslide(8)"> </span>
+	<span class="dot" onclick="currentslide(9)"> </span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+	var i;
+	var slides = 
+document.getElementsByClassName("mySlides");
+	var dots = 
+document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++)
+{
+
+
+
+</script>
+
+</body>
+</html>

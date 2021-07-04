@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Mindbook-Notebook of your thoughts</title>
+
+<link rel="stylesheet" href="Styles/formstyles.css">
+
+<img class="logo1" src="Images/logo.jpg"> </img>
+<br>
+<h2> <center> <b> <font size="6"> -Notebook of your thoughts- </font> </center> </b> </h2>
+
+<br>
+
+<ul class="navbar">
+  <li><a href="project1.html">Home</a></li>
+  <li><a href="products.html">Products</a></li>
+  <li><a href="picturepage.html">Pictures</a></li>
+  <li><a href="form.html">Order Your Own Mindbook</a></li>
+  <li><a href="reviewspage.html">Reviews</a></li>
+  <li><a href="contactpage.html">Contact Us</a></li>
+  <li><a href="login.html">Log in</a></li>
+</ul>
+
+</head>
+
+<body>
+ 
+<form action="success.html" method="post">
+
+<h2 class="otherh2"> <u> -Order Your Mindbook In 3 Minutes- </u> </h2>
+
+<br>
+
+<u> <b> First Name:</u> </b> <br>
+<input type="text" name="first name"> <br>
+<br> 
+<u> <b> Second Name:</u> </b> <br>
+<input type="text" name="second name"> <br>
+<br>
+<u> <b> Address:</u> </b> <br>
+<textarea name="address" rows="7" cols="35"> </textarea> <br>
+<br>
+<u> <b> Age:</u> </b> <br>
+<input type="number" name="age"> <br>
+<br>
+<u> <b> Occupation:</u> </b> <br>
+<input type="text" name="occupation"> <br>
+<br>
+<u> <b> Gender: </u> </b> <br> 
+<input type="radio" name="gender" value="male"> Male <br>
+<input type="radio" name="gender" value="female"> Female <br>
+<input type="radio" name="gender" value="other"> Other <br>
+<br>
+<u> <b> Mindbook Type:</u> </b> <br>
+<select name="">
+<option value="Select">Select</option>
+<option value="Spiral Notebook">Spiral Notebook</option>
+<option value="Composition Notebook">Composition Notebook</option>
+</select>
+<br>
+<br>
+<u> <b> Mindbook Color: </b> </u> <br>
+<select name="">
+<option value="Select">Select</option>
+<option value="Black">Black</option>
+<option value="Red">Red</option>
+<option value="Green">Green</option>
+<option value="Pink">Pink</option> 
+</select>
+<br>
+<br>
+<u> <b> Last Day To Receive: </u> </b> <br> 
+<input type="date" name="lastday">
+
+	<button type="button" onclick="explain()">?</button>
+	<button type="button" onclick="back()">OK!</button>
+
+	<p id="explanation"> *The blank above is for the clients to input the last day that they wish to receive the product. </p>
+
+	<script>
+	function explain() {
+	document.getElementById("explanation").style.fontSize = "23px";
+	document.getElementById("explanation").style.color = "red";
+	}
+	</script> 
+	
+	<script>
+	function back() {
+	document.getElementById("explanation").style.fontSize = "16px";
+	document.getElementById("explanation").style.color = "black";
+	}
+	</script>
+
+<button type="submit"> Order </button>
+
+
+</form> 
+
+
+<div class="bottom">
+
+	<p> <b> <font size="4"> -Mindbook LTD 2018- </b> </p> </font>
+	<p> <b> <font size="4"> Copyright 2018 Mindbook LTD. All rights reserved. </b> </p> </font>
+
+	<ul> <b> <u> <font size="4"> Companies in association with: </b> </u> </font>
+	<br>
+	<br>
+		<li> <font size="4"> Apple INC. </li> </font>
+		<li> <font size="4"> Collins Notebooks </li> </font>
+		<li> <font size="4"> Ebay </li> </font>
+		<li> <font size="4"> Amazon </li> </font>
+		<li> <font size="4"> Etsy </li> </font>
+		<li> <font size="4"> Overstock </li> </font>
+	</ul>
+</div>
+ 
+</body>
+</html>

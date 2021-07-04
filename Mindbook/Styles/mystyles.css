@@ -1,0 +1,22 @@
+p{
+font-family:arial; 
+color: white; 
+background: red;
+}
+
+ul{
+	font-family: arial; 
+color: white; 
+background: blue;
+}
+
+body{
+	background-image: url("../Images/b3.jpg");
+}
+
+h1{color: white;
+}
+
+table{color: white;
+border: red;
+}
